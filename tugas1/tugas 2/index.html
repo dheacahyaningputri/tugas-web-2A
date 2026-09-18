@@ -1,0 +1,250 @@
+</html>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biodata Mahasiswa</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #312e81, #6d28d9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        
+        .container {
+            width: 900px;
+            max-width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        /* Bagian atas */
+        
+        .header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 35px 20px 50px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+        /* Foto */
+        
+        .photo {
+            width: 150px;
+            height: 150px;
+            margin: -75px auto 20px;
+            border-radius: 50%;
+            border: 6px solid white;
+            overflow: hidden;
+            background: #e5e7eb;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Isi */
+        
+        .content {
+            padding: 10px 45px 40px;
+        }
+        
+        .name {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .name h2 {
+            color: #1e293b;
+            font-size: 28px;
+        }
+        
+        .name p {
+            color: #64748b;
+            margin-top: 6px;
+        }
+        /* Biodata */
+        
+        .biodata {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+        
+        .info {
+            background: #f8fafc;
+            border-left: 5px solid #6366f1;
+            padding: 18px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        
+        .info:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+        }
+        
+        .info h3 {
+            color: #475569;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        
+        .info p {
+            color: #0f172a;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        /* Deskripsi */
+        
+        .about {
+            margin-top: 30px;
+            background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .about h2 {
+            color: #4338ca;
+            margin-bottom: 12px;
+        }
+        
+        .about p {
+            color: #475569;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        /* Footer */
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f5f9;
+            color: #64748b;
+            font-size: 14px;
+        }
+        /* Tampilan HP */
+        
+        @media (max-width: 700px) {
+            body {
+                padding: 15px;
+            }
+            .content {
+                padding: 10px 25px 30px;
+            }
+            .biodata {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 25px;
+            }
+            .name h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>BIODATA Dhea Cahyaning Putri</h1>
+            <p>Personal Profile</p>
+        </div>
+
+
+        <!-- Foto -->
+        <div class="photo">
+            <img src="foto.dhea/3x4 foto.png" alt="Foto Mahasiswa">
+        </div>
+
+
+        <!-- Isi Biodata -->
+        <div class="content">
+
+            <!-- Nama -->
+            <div class="name">
+                <h2>Dhea Cahyaning Putri</h2>
+                <p>Mahasiswa Sistem Informasi</p>
+            </div>
+
+
+            <!-- Informasi Biodata -->
+            <div class="biodata">
+
+                <div class="info">
+                    <h3>Nama</h3>
+                    <p>Dhea Cahyaning Putri</p>
+                </div>
+
+                <div class="info">
+                    <h3>NIM</h3>
+                    <p>2513020039</p>
+                </div>
+
+                <div class="info">
+                    <h3>Alamat</h3>
+                    <p>Tulungagung</p>
+                </div>
+
+                <div class="info">
+                    <h3>Tempat, Tanggal Lahir</h3>
+                    <p>Tulungagung,22 Desember 2006</p>
+                </div>
+
+            </div>
+
+
+            <!-- Deskripsi -->
+            <div class="about">
+
+                <h2>Tentang Saya</h2>
+
+                <p>
+                    Halo, saya Dhea Cahyaning Putri. Saya merupakan mahasiswa Program Studi Sistem Informasi. Saya adalah mahasiswa semester 3
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2026 | Biodata Mahasiswa
+        </div>
+
+    </div>
+
+</body>
+
+</html>
