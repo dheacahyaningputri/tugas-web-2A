@@ -1,7 +1,97 @@
-h1 {
-    color: blue;
-    font-size: 30px;
+/* ==========================================================================
+   RESET & VARIABEL DASAR
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
 }
 
 
-/*
+/* ==========================================================================
+   HEADER / NAVIGASI
+   ========================================================================== */
+
+header {
+    background-color: #24292e;
+    /* Warna gelap elegan khas GitHub */
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+
+/* ==========================================================================
+   KONTEN UTAMA (MAIN)
+   ========================================================================== */
+
+main {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #24292e;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 0.5rem;
+}
+
+.card h3 {
+    margin-top: 1.5rem;
+    color: #444;
+}
+
+
+/* Style untuk List/Daftar */
+
+ul {
+    margin-top: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #6a737d;
+    background-color: #fafbfc;
+    border-top: 1px solid #e1e4e8;
+}
