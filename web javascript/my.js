@@ -1,2 +1,4 @@
- script type = "text/javascript" > alert('Hello saya adalah tugas 1 javascript!'); <
- /script>
+// untuk memunculkan popup pesan
+alert("Hello, saya adalah javascript");
+
+my.js
