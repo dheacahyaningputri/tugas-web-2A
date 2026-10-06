@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASIR-JS</title>
+</head>
+
+<body>
+    <h1>Program Kasir</h1>
+    <script type="text/javascript">
+        // 1. Input nama barang
+        let namaBarang = prompt("Masukkan nama barang:");
+
+        // 2. Input harga barang
+        let hargaBarang = parseFloat(prompt("Masukkan harga barang:"));
+
+        // 3. Input jumlah beli (qty)
+        let qty = parseInt(prompt("Masukkan jumlah beli (qty):"));
+
+        // Hitung total awal
+        let total = hargaBarang * qty;
+
+        // 4. Cek diskon jika pembelian lebih dari 50.000
+        let diskon = 0;
+        if (total > 50000) {
+            diskon = 0.10 * total;
+        }
+
+        // Hitung total pembayaran setelah diskon
+        let pembayaran = total - diskon;
+
+        // Format angka ke format rupiah/ribuan Indonesia (menggunakan titik)
+        let hargaFormatted = hargaBarang.toLocaleString('id-ID');
+        let totalFormatted = total.toLocaleString('id-ID');
+        let diskonFormatted = diskon.toLocaleString('id-ID');
+        let pembayaranFormatted = pembayaran.toLocaleString('id-ID');
+
+        // 5. Menampilkan Struk Belanja dengan tag <pre> agar spasinya rapi
+        document.write("<pre>");
+        document.write("++++++++++++++++++++++++++++++++++++++++++++<br>");
+        document.write("+                                          +<br>");
+        document.write("+ nama       Harga      qty    total       +<br>");
+        document.write("+ " + namaBarang.padEnd(11) + "                              +<br>");
+        document.write("+            " + hargaFormatted.padEnd(11) + " " + qty.toString().padEnd(6) + " " + totalFormatted.padEnd(11) + " +<br>");
+        document.write("+                                          +<br>");
+        document.write("+                                          +<br>");
+        document.write("+ total belanja         " + totalFormatted.padEnd(18) + " +<br>");
+        document.write("+ diskon                " + diskonFormatted.padEnd(18) + " +<br>");
+        document.write("+ pembayaran            " + pembayaranFormatted.padEnd(18) + " +<br>");
+        document.write("+                                          +<br>");
+        document.write("++++++++++++++++++++++++++++++++++++++++++++<br>");
+        document.write("</pre>");
+    </script>
+</body>
+
+</html>
